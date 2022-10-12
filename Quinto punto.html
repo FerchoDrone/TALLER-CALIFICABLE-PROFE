@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="Quinto punto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Document</title>
+
+</head>
+
+<style>
+    body{
+        background-color: rgb(115, 233, 147);
+    }
+</style>
+
+<body>
+
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="app w-75 shadow p-5 mt-5 row">
+            <div class="col-8 rows-container">
+                <div class="d-flex border border-primary justify-content-around p-3 ">
+                    <div class="border border-success p-3 seat">V-A</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-A', 10)">10</div>
+                </div>
+
+                <div class="d-flex border border-primary justify-content-around p-3">
+                    <div class="border border-success p-3 seat">V-B</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('V-B', 10)">10</div>
+                </div>
+
+                <!-- <div class="d-flex border border-primary justify-content-around p-3">
+                    <div class="border border-success p-3 seat">Vagón3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón3', 10)">10</div>
+                </div>
+
+                <div class="d-flex border border-primary justify-content-around p-3">
+                    <div class="border border-success p-3 seat">Vagón4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón4', 10)">10</div>
+                </div>
+
+                <div class="d-flex border border-primary justify-content-around p-3">
+                    <div class="border border-success p-3 seat">Vagón5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón5', 10)">10</div>
+                </div>
+
+                <div class="d-flex border border-primary justify-content-around p-3">
+                    <div class="border border-success p-3 seat">Vagón6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón6', 10)">10</div>
+                </div>
+
+                <div class="d-flex border border-primary justify-content-around p-3">
+                    <div class="border border-success p-3 seat">Vagón7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón7', 10)">10</div>
+                </div>
+
+                <div class="d-flex border border-primary justify-content-around p-3">
+                    <div class="border border-success p-3 seat">Vagón8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón8', 10)">10</div>
+                </div>
+
+                <div class="d-flex border border-primary justify-content-around p-3">
+                    <div class="border border-success p-3 seat">Vagón9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón9', 10)">10</div>
+                </div>
+
+                <div class="d-flex border border-primary justify-content-around p-3">
+                    <div class="border border-success p-3 seat">Vagón10</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 1)">1</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 2)">2</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 3)">3</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 4)">4</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 5)">5</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 6)">6</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 7)">7</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 8)">8</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 9)">9</div>
+                    <div class="border border-sucess p-3 seat" onclick="seatInfo('Vagón10', 10)">10</div>
+                </div> -->
+            </div>
+            <div class="col-5">
+                <h5 class="seat-info"></h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nombre del pasajero</label>
+                        <input type="text" class="form-control full-name" id="exampleFormControlInput1">
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Cédula</label>
+                        <input type="text" class="form-control cc" id="exampleFormControlInput1">
+                    </div>
+                    
+                    <div class="row reserve-button">
+                        <button type="submit" class="btn btn-danger">Reservar</button>
+                    </div>
+                </form>
+            </div>
+
+            <table class="table">
+              <thead>
+                <th>vagón</th>
+                <th>Nombre</th>
+                <th>Cédula</th>
+                <th>Acción</th>
+              </thead>
+              <tbody></tbody>
+            </table>
+
+        </div>
+    </div>
+    <script src="Quinto punto.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
